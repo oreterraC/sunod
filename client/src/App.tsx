@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import TrackGrid from "./components/TrackGrid";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -13,7 +14,7 @@ function App() {
           onChange={() => setDarkMode((darkMode) => !darkMode)}
         />
         <aside className="hidden lg:block bg-gray-800 text-white p-4"></aside>
-        <main className="bg-gray-600 p-4"></main>
+        <TrackGrid />
       </div>
     </div>
   );
